@@ -438,7 +438,7 @@ export default async function handler(req, res) {
       name: profileData.name || "Unknown",
       title: resumeContent.title || "Senior Software Engineer",
       location: profileData.location || "",
-      //phone: profileData.phone || "",
+      phone: profileData.phone || "",
       email: profileData.email || "",
       linkedin: profileData.linkedin || "",
       github: profileData.github || "",
