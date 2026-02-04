@@ -570,13 +570,14 @@ export default function ProfilePage() {
                 textTransform: "uppercase",
                 letterSpacing: "0.3px"
               }}>
-                Company Name <span style={{ fontWeight: "400", textTransform: "none" }}>(Optional)</span>
+                Company Name <span style={{ fontWeight: "400", textTransform: "none" }}>(Required)</span>
               </label>
               <input
                 type="text"
                 value={companyName}
                 onChange={(e) => setCompanyName(e.target.value)}
                 placeholder="Enter company name for filename..."
+                required
                 style={{
                   width: "100%",
                   padding: "clamp(6px, 1.5vw, 8px) clamp(10px, 2.5vw, 12px)",

@@ -202,7 +202,7 @@ Generates a resume PDF based on job description.
   "profile": "bv",              // Profile slug
   "jd": "Job description...",    // Job description text
   "roleName": "Senior Engineer", // Job title (required)
-  "companyName": "Tech Corp",   // Company name (optional)
+  "companyName": "Tech Corp",   // Company name (required)
   "provider": "claude",         // AI provider: "claude" or "openai"
   "model": null                 // Model ID (optional, uses default)
 }
