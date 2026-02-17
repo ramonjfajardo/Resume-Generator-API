@@ -12,35 +12,35 @@
     {
       "company": "Kiggla",
       "title": "Senior Software Engineer",
-      "location": "",
+      "location": "Florida, US",
       "start_date": "10/2024",
       "end_date": "Present"
     },
     {
       "company": "PuzzleHR",
       "title": "Senior Full Stack Engineer",
-      "location": "",
+      "location": "Florida, US",
       "start_date": "08/2021",
       "end_date": "09/2024"
     },
     {
       "company": "Nubank",
       "title": "Full Stack Engineer",
-      "location": "",
+      "location": "Buenos Aires, Argentina",
       "start_date": "09/2018",
       "end_date": "05/2021"
     },
     {
     "company": "Accenture Argentina",
     "title": "Back End Developer",
-    "location": "",
+    "location": "Buenos Aires, Argentina",
     "start_date": "09/2016",
     "end_date": "08/2018"
     },
     {
     "company": "Globant",
     "title": "Front End Developer",
-    "location": "",
+    "location": "Buenos Aires, Argentina",
     "start_date": "02/2015",
     "end_date": "08/2016"
     }

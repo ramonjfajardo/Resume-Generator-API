@@ -4,31 +4,31 @@
   "phone": "",
   "location": "Greater Natal, Brazil",
   "postalCode": "59090-000",
-  "linkedin": "https://www.linkedin.com/in/lucas-moura-41455b245/",
+  "linkedin": "www.linkedin.com/in/lucas-moura-61b7213ab/",
   "github": "",
   "website": "",
   
   "experience": [
     {
       "company": "Kiggla",
-      "title": "Software Engineer",
+      "title": "Senior Software Engineer",
       "location": "Florida, US",
-      "start_date": "Jun 2025",
-      "end_date": "12/2025"
+      "start_date": "06/2024",
+      "end_date": "Present"
     },
     {
       "company": "PuzzleHR",
       "title": "Software Engineer",
       "location": "Florida, US",
-      "start_date": "May 2020",
-      "end_date": "Feb 2025"
+      "start_date": "05/2020",
+      "end_date": "05/2024"
     },
     {
-      "company": "Icone Sistems",
+      "company": "Icone Sistemas",
       "title": "Junior Software Engineer",
-      "location": "Rio Grande do Norte, Brazil",
-      "start_date": "Jul 2017",
-      "end_date": "Oct 2019"
+      "location": "Rio Grande do Sul, Brazil",
+      "start_date": "10/2017",
+      "end_date": "04/2020"
     }
   ],
   
