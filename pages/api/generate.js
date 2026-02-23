@@ -442,7 +442,7 @@ export default async function handler(req, res) {
       location: profileData.location || "",
       phone: profileData.phone || "",
       email: profileData.email || "",
-      linkedin: profileData.linkedin || "",
+      // linkedin: profileData.linkedin || "",
       //github: profileData.github || "",
       //website: profileData.website || "",
       summary: resumeContent.summary || "",
