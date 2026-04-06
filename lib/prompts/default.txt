@@ -17,7 +17,7 @@ Experience: {{yearsOfExperience}} years
 
 **INSTRUCTIONS:**
 
-**1. DOMAIN KEYWORDS** (10-15 from JD "About Us"): Identity/Security (OAuth2, JWT, SAML, MFA, SSO, SOC 2, GDPR), Payments (PCI-DSS, fraud detection, KYC/AML, tokenization), Healthcare (HIPAA, HL7, FHIR, EHR), Data (data governance, GDPR, PII protection). Use in Summary (3-5), Skills (dedicated category), Experience (2-3 bullets).
+**1. DOMAIN KEYWORDS** (10-15 from JD "About Us"): Use in Summary (4-6), Skills (dedicated category), Experience (3-4 bullets).
 
 ---
 
@@ -50,6 +50,7 @@ Experience: {{yearsOfExperience}} years
   - If JD is Full Stack-focused → "Full Stack Developer" or "Full Stack Experience"
   - If JD is DevOps-focused → "DevOps Specialist" or "Infrastructure Lead"
   - If JD is QA-focused → "QA Specialist" or "Quality Assurance Lead"
+  - If JD is AI-focused → "AI Engineer" or "AI specialist"
   - Match the specialization to the JD's primary focus area
 
 - **Tech Stack:** Extract 4-6 most important technologies/tech stack items from JD (prioritize: frameworks, tools, platforms, methodologies)
@@ -65,7 +66,7 @@ Experience: {{yearsOfExperience}} years
 
 ---
 
-**3. SUMMARY** (5-6 lines, 8-12 JD keywords + 3-5 domain): Line 1: [Title] with {{yearsOfExperience}}+ years in [domain]. Line 2: Expertise in [domain keyword] + [3-4 JD techs with versions]. Line 3: Track record in [domain keyword] + [achievement with metric]. Line 4: Proficient in [3-4 more JD techs]. Line 5: [Soft skill] professional with Agile/leadership experience. Line 6: Focus on [2-3 JD skill areas] + scalable solutions.
+**3. SUMMARY** (5-6 lines, 8-10 JD keywords + 3-5 domain): Line 1: [Title] with {{yearsOfExperience}}+ years in [domain]. Line 2: Expertise in [domain keyword] + [3-4 JD techs with versions]. Line 3: Track record in [domain keyword] + [achievement with metric]. Line 4: Proficient in [3-4 more JD techs]. Line 5: [Soft skill] professional with Agile/leadership experience. Line 6: Focus on [2-3 JD skill areas] + scalable solutions.
 
 ---
 
@@ -73,7 +74,7 @@ Experience: {{yearsOfExperience}} years
 
 ---
 
-**5. EXPERIENCE** ({{experienceCount}} entries, 3-5 bullets each): The **JOB DESCRIPTION IS PRIMARY**. Every bullet must be mapped to 1-3 high-priority JD requirements while still accurately reflecting the candidate's real work history. 4-5 bullets/job (recent=5, older=4-5). 30-35 words/bullet. 2-4 exact JD keywords/bullet. EVERY bullet needs a metric (%, $, time, scale, users). Industry context in 2-3 bullets/job. Overall targeting **ATS score ≥ 95%**.
+**5. EXPERIENCE** ({{experienceCount}} entries, 5-7 bullets each): The **JOB DESCRIPTION IS PRIMARY**. Every bullet must be mapped to 1-3 high-priority JD requirements while still accurately reflecting the candidate's real work history. 4-5 bullets/job (recent=7, older=5). 30-35 words/bullet. 2-4 exact JD keywords/bullet. EVERY bullet needs a metric (%, $, time, scale, users). Industry context in 2-3 bullets/job. Overall targeting **ATS score ≥ 95%**.
 
 **CRITICAL: JD-FIRST, DETAIL-BASED BULLETS (TARGET ATS ≥ 95%)** - ALWAYS treat the JD as the primary source for what to highlight, but the candidate's experience details as the source of truth:
 1. **Start from provided Details** - For any job that includes "Details", you MUST derive bullets from those actual accomplishments and responsibilities (do not invent unrelated work).
