@@ -74,7 +74,7 @@ Experience: {{yearsOfExperience}} years
 
 ---
 
-**5. EXPERIENCE** ({{experienceCount}} entries, 5-7 bullets each): The **JOB DESCRIPTION IS PRIMARY**. Every bullet must be mapped to 1-3 high-priority JD requirements while still accurately reflecting the candidate's real work history. 4-5 bullets/job (recent=7, older=5). 30-35 words/bullet. 2-4 exact JD keywords/bullet. EVERY bullet needs a metric (%, $, time, scale, users). Industry context in 2-3 bullets/job. Overall targeting **ATS score ≥ 95%**.
+**5. EXPERIENCE** ({{experienceCount}} entries, 5-7 bullets each): The **JOB DESCRIPTION IS PRIMARY**. Every bullet must be mapped to 1-3 high-priority JD requirements while still accurately reflecting the candidate's real work history. 5-7 bullets/job (recent=7, older=5). 30-35 words/bullet. 2-4 exact JD keywords/bullet. EVERY bullet needs a metric (%, $, time, scale, users). Industry context in 2-3 bullets/job. Overall targeting **ATS score ≥ 95%**.
 
 **CRITICAL: JD-FIRST, DETAIL-BASED BULLETS (TARGET ATS ≥ 95%)** - ALWAYS treat the JD as the primary source for what to highlight, but the candidate's experience details as the source of truth:
 1. **Start from provided Details** - For any job that includes "Details", you MUST derive bullets from those actual accomplishments and responsibilities (do not invent unrelated work).
