@@ -1,0 +1,29 @@
+{
+  "name": "Sergio Triana Escobedo",
+  "email": "sergiotriana@outlook.com",
+  "phone": "",
+  "location": "Cuernavaca, Morelos, Mexico",
+  "postalCode": "",
+  "linkedin": "https://www.linkedin.com/in/stescobedo/",
+  "github": "https://github.com/stescobedo92",
+  "website": "",
+  
+  "experience": [
+    {
+      "company": "Apex Systems",
+      "title": "Software Engineer",
+      "location": "",
+      "start_date": "09/2022",
+      "end_date": "11/2025"
+    }
+  ],
+  
+  "education": [
+    {
+      "degree": "Bachelor's Degree, Computer Science",
+      "school": "Central University Marta Abreu of Las Villas(UCLV)",
+      "start_year": "2013",
+      "end_year": "2018"
+    }
+  ]
+}

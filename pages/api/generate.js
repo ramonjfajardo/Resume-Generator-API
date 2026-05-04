@@ -450,7 +450,8 @@ export default async function handler(req, res) {
       experience: (profileData.experience || []).map((job, idx) => ({
         title: job?.title || resumeContent.experience?.[idx]?.title || "Engineer",
         company: job?.company || "Unknown Company",
-        location: job?.location || "",
+        // location: job?.location || "",
+        location: "",
         start_date: job?.start_date || "",
         end_date: job?.end_date || "",
         details: resumeContent.experience?.[idx]?.details || []
