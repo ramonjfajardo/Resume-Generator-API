@@ -220,18 +220,31 @@ Priority:
 
 ## Requirements
 
-* 5–6 lines
+* Single paragraph only
+* No line breaks
+* 5–6 sentences
 * 8–12 JD keywords
 * 3–5 domain keywords
+* Professional ATS-optimized tone
 
 ## Structure
 
-1. Title + years + domain
-2. Core expertise + major JD tech stack
-3. Achievement + measurable impact
-4. Additional technologies
-5. Soft skills + Agile/leadership
-6. Focus areas + scalable solutions
+Include:
+
+1. Title + years of experience + domain expertise
+2. Core expertise and major JD technologies
+3. Quantified achievement and business impact
+4. Additional technical proficiencies
+5. Soft skills, Agile/leadership experience
+6. Focus on scalable solutions and JD-aligned responsibilities
+
+## Rules
+
+* Write naturally as one continuous paragraph
+* Do NOT use bullet points
+* Do NOT insert newline characters
+* Avoid repetitive sentence openings
+* Integrate JD keywords organically
 
 ---
 
@@ -242,8 +255,8 @@ Priority:
 * 50–60 total skills
 * 5–6 categories
 * 8–12 skills/category
-* 70% JD-aligned
-* 30% complementary
+* 80% JD-aligned
+* 20% complementary
 
 ## Category Examples
 
