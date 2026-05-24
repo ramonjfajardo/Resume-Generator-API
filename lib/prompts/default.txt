@@ -1,415 +1,81 @@
-# ATS Resume Tailoring Prompt
+ATS optimization expert. Generate resume JSON:
 
-## ROLE
+OUTPUT: ONLY valid JSON (no markdown, no text).
 
-You are an ATS resume optimization expert.
+INPUT:
+Candidate: {{name}} | {{email}} | {{location}}
+Experience: {{yearsOfExperience}} years
+WorkHistory: {{workHistory}}
+Education: {{education}}
+JobDescription: {{jobDescription}}
 
-Generate a tailored resume JSON optimized for ATS score ≥95% based on the provided job description and candidate background.
+TASK:
+Optimize resume for ATS (target ≥95%) using JD keywords.
 
----
+KEYWORDS:
+Extract 10–15 JD keywords.
+Use 4–6 in Summary, 50–70% in Skills, 80~90% in Experience.
 
-## INPUTS
+TITLE RULE:
+Base = most recent job title.
+Normalize titles by removing seniority words (Senior/Lead/Principal/Staff/Junior).
+Compare core role (Full Stack/Frontend/Backend/Software/DevOps/AI/QA).
 
-### Candidate
+IF MATCH:
+Title = "Base Title | Tech1 | Tech2 | Tech3"
 
-* Name: `{{name}}`
-* Email: `{{email}}`
-* Location: `{{location}}`
-* Experience: `{{yearsOfExperience}} years`
+IF NOT MATCH:
+Title = "Base Title | JD Specialization | Tech1 | Tech2 | Tech3"
+Specialization = JD focus (Frontend/Backend/Full Stack/DevOps/AI/QA).
 
-### Work History
+SKILLS:
+5–6 categories (Frontend/Backend/Cloud/DevOps/etc).
+8–12 skills each.
+Group AWS like: AWS (Lambda, S3, EC2).
+No duplicates, no version spam.
 
-```text
-{{workHistory}}
-```
+SUMMARY (5–6 lines):
+Line1: Title + {{yearsOfExperience}} + domain.
+Line2: JD tech + expertise.
+Line3: achievement + metric.
+Line4: more JD tech.
+Line5: soft skills + Agile/leadership.
+Line6: impact + scale.
+no breakdown
 
-### Education
+EXPERIENCE:
+{{experienceCount}} jobs, 5–7 bullets each (recent=7, older=5).
 
-```text
-{{education}}
-```
+RULES:
 
-### Job Description
+- JD is primary.
+- Use only provided work history (no invention).
+- Enhance bullets with JD keywords + metrics.
+- 2–4 JD keywords per bullet.
+- Each bullet MUST include metric (%,$,time,users,scale).
+- 30–35 words per bullet.
+- Action verbs only (Architected, Engineered, Built, etc).
+- Avoid “Responsible for / Worked on”.
 
-```text
-{{jobDescription}}
-```
+TECH VALIDITY RULE:
+Only use technologies that existed during job period.
+If uncertain, replace with older equivalents.
 
----
-
-## OUTPUT RULES
-
-Return ONLY valid JSON.
-
-Do NOT return:
-
-* markdown
-* explanations
-* code fences
-* notes
-* extra text
-
-Output must start with `{` and end with `}`.
-
----
-
-## OUTPUT SCHEMA
-
-```json
+STRUCTURE:
 {
-  "title": "Job Title | Tech1 | Tech2 | Tech3",
-  "summary": "Professional summary",
+  "title": "",
+  "summary": "",
   "skills": {
-    "Category": ["Skill1", "Skill2"]
+    "Category1": [],
+    "Category2": []
   },
   "experience": [
     {
-      "title": "Job Title",
-      "details": [
-        "Achievement bullet with metric"
-      ]
+      "title": "",
+      "details": []
     }
   ]
 }
-```
 
----
-
-## GLOBAL ATS RULES
-
-### Keyword Optimization
-
-* Use exact JD phrases whenever possible
-* Prioritize high-frequency JD keywords
-* Repeat critical keywords naturally across:
-
-  * title
-  * summary
-  * skills
-  * experience bullets
-
-### ATS Target
-
-* Target ATS score ≥95%
-
-### Writing Style
-
-* Professional and concise
-* Strong action verbs
-* Quantified impact in every bullet
-* Natural language flow
-* No keyword stuffing
-
----
-
-## 1. DOMAIN KEYWORDS
-
-Extract 10–15 domain-specific keywords from the JD company/about/domain section.
-
-Use them across:
-
-* Summary: 4–6
-* Skills: dedicated category if relevant
-* Experience: 4–6 bullets total
-
-Examples:
-
-* FinTech → Payments, PCI, Compliance
-* Healthcare → HIPAA, EMR, Healthcare Compliance
-* Security → IAM, OAuth, Zero Trust
-* Data → Governance, Pipelines, Warehousing
-
----
-
-## 2. TITLE GENERATION
-
-### Base Title
-
-Use the candidate's most recent job title.
-
----
-
-### Title Matching Logic
-
-Normalize titles before comparison:
-
-* Remove seniority words:
-
-  * Senior
-  * Lead
-  * Principal
-  * Staff
-  * Junior
-  * Entry-Level
-
-Compare core role domains:
-
-* Full Stack
-* Frontend
-* Backend
-* Software Engineer
-* Developer
-* DevOps
-* QA
-* AI
-* Architect
-
-#### MATCH Examples
-
-* Full Stack Engineer ↔ Full Stack Developer
-* Frontend Engineer ↔ Frontend Developer
-* Backend Engineer ↔ Backend Developer
-* Software Engineer ↔ Software Developer
-* DevOps Engineer ↔ DevOps Specialist
-* AI Engineer ↔ Artificial Intelligence Engineer
-
-#### NON-MATCH Examples
-
-* Full Stack ↔ Frontend
-* Full Stack ↔ Backend
-* Full Stack ↔ AI
-* Backend ↔ Full Stack
-* Frontend ↔ Full Stack
-* General Software Engineer ↔ Frontend-only
-
----
-
-### Title Format
-
-#### If MATCH
-
-```text
-[Most Recent Title] | [Tech1] | [Tech2] | [Tech3]
-```
-
-#### If NOT MATCH
-
-```text
-[Most Recent Title] | [JD Specialization] | [Tech1] | [Tech2] | [Tech3]
-```
-
----
-
-### JD Specialization Mapping
-
-| JD Focus   | Specialization        |
-| ---------- | --------------------- |
-| Frontend   | Frontend Specialist   |
-| Backend    | Backend Specialist    |
-| Full Stack | Full Stack Experience |
-| DevOps     | DevOps Specialist     |
-| QA         | QA Specialist         |
-| AI         | AI Engineer           |
-
----
-
-### Tech Stack Rules
-
-Extract 4–6 major technologies from the JD:
-Priority:
-
-1. Frameworks
-2. Platforms
-3. Cloud
-4. Tools
-5. Methodologies
-
----
-
-## 3. SUMMARY
-
-### Requirements
-
-* Single paragraph only
-* No line breaks
-* 5–6 sentences
-* 8–12 JD keywords
-* 3–5 domain keywords
-* ATS-optimized professional tone
-
-### Must Include
-
-* Mention remote work experience (distributed / remote-first environments)
-* Mention English communication ability:
-
-  * Use phrasing like: “strong English communication in remote teams” or “fluent professional English communication”
-
-### Structure
-
-Include:
-
-1. Title + years of experience + domain expertise
-2. Core technical expertise aligned with JD
-3. Quantified achievement and impact
-4. Key technologies from JD
-5. Soft skills + Agile + collaboration
-6. Remote work + English communication capability
-7. Focus on scalable systems and JD alignment
-
-### Rules (summary)
-
-* Must be ONE continuous paragraph
-* No bullet points
-* No newline characters
-* No repetitive sentence starts
-* Integrate keywords naturally (no stuffing)
-* Remote + English statement must feel natural, not forced
-
----
-
-## 4. SKILLS
-
-### Rules (Skills)
-
-* 50–60 total skills
-* 5–6 categories
-* 8–12 skills/category
-* 80% JD-aligned
-* 20% complementary
-
-### Category Examples
-
-* Frontend
-* Backend
-* Cloud
-* DevOps
-* Security
-* Data
-* Testing
-
-### Formatting
-
-* Capitalize properly
-* Avoid version spam
-* Group cloud services
-
-Example:
-
-```text
-AWS (Lambda, EC2, S3)
-```
-
----
-
-## 5. EXPERIENCE
-
-### Core Rule
-
-The JD is the optimization target.
-The candidate history is the source of truth.
-
----
-
-### Bullet Requirements
-
-* 5–7 bullets/job
-
-  * Recent 2 roles: 6
-  * Older roles: 4
-* 30–35 words each
-* 2–4 exact JD keywords per bullet
-* Every bullet must include:
-
-  * measurable metric
-  * business impact
-  * strong action verb
-
----
-
-### Preferred Verbs
-
-* Architected
-* Engineered
-* Built
-* Designed
-* Developed
-* Implemented
-* Optimized
-* Enhanced
-* Automated
-* Spearheaded
-* Deployed
-
-Avoid:
-
-* Responsible for
-* Worked on
-
----
-
-### Metrics Examples
-
-* 40% faster
-* Reduced costs 35%
-* 99.9% uptime
-* 10M+ records
-* 50K+ users
-* Deployment time reduced 2hrs → 15min
-
----
-
-### Experience Tailoring Rules
-
-#### If Detailed Accomplishments Exist
-
-* Preserve actual responsibilities
-* Improve wording for ATS alignment
-* Inject relevant JD keywords naturally
-* Keep technologies authentic
-
-#### If No Details Exist
-
-Generate plausible achievements based on:
-
-* role
-* company
-* dates
-* JD requirements
-
----
-
-## TECHNOLOGY TIMELINE VALIDATION
-
-Only use technologies that existed during the job period.
-
-Examples:
-
-| Technology | Release Year |
-| ---------- | ------------ |
-| TypeScript | 2012         |
-| React      | 2013         |
-| Docker     | 2013         |
-| Kubernetes | 2014         |
-| Vue.js     | 2014         |
-| GraphQL    | 2015         |
-| Angular    | 2016         |
-| Next.js    | 2016         |
-
-If uncertain:
-
-* use older equivalents
-* use generic terminology
-
-Examples:
-
-* jQuery
-* AngularJS
-* PHP
-* Java
-* .NET
-* Ruby on Rails
-
----
-
-## FINAL VALIDATION CHECKLIST
-
-Ensure:
-
-* Exact JD phrases used naturally
-* Required skills included
-* Strong metrics everywhere
-* ATS-focused wording
-* No fabricated seniority
-* No impossible tech timelines
-* Clean JSON formatting
-* Valid parsable JSON only
+STRICT:
+Return ONLY JSON. No markdown. No explanation. No extra text.
