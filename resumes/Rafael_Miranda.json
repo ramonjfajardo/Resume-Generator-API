@@ -1,7 +1,7 @@
 {
   "name": "Rafael Eduardo Miranda Alcocer",
   "email": "rafaeleduardo.malcocer@outlook.com",
-  "phone": "",
+  "phone": "+52 55 6477 4472",
   "location": "Valladolid, Yucatán, Mexico",
   "postalCode": "97780",
   "linkedin": "",
@@ -10,9 +10,9 @@
   
   "experience": [
     {
-      "company": "Kiggla",
+      "company": "BrightOps",
       "title": "Senior Software Engineer",
-      "location": "Florida, US",
+      "location": "Massachusetts, US",
       "start_date": "01/2025",
       "end_date": "Present"
     },
@@ -34,7 +34,7 @@
   
   "education": [
     {
-      "degree": "Bachelor's Degree, Computer Science",
+      "degree": "Bachelor's Degree in Computer Science",
       "school": "University of Memphis",
       "start_year": "2011",
       "end_year": "2015"

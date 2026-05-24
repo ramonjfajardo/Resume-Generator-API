@@ -1,7 +1,7 @@
 {
   "name": "Lucas Moura",
   "email": "lucasm.work1@outlook.com",
-  "phone": "",
+  "phone": "+55 11 91362-0497",
   "location": "Greater Natal, Brazil",
   "postalCode": "59090-000",
   "linkedin": "",
@@ -17,9 +17,9 @@
       "end_date": "Present"
     },
     {
-      "company": "PuzzleHR",
+      "company": "BrightOps",
       "title": "Software Engineer",
-      "location": "Florida, US",
+      "location": "Massachusetts, US",
       "start_date": "05/2020",
       "end_date": "05/2024"
     },
@@ -35,7 +35,7 @@
   "education": [
     {
       "degree": "Bachelor's Degree in Computer Science",
-      "school": "Universidade Federal do Rio Grande do Norte (UFRN) | Federal University of Rio Grande do Norte",
+      "school": "Universidade Federal do Rio Grande do Norte (UFRN)",
       "start_year": "2013",
       "end_year": "2017"
     }
