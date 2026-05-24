@@ -8,28 +8,28 @@ Generate a tailored resume JSON optimized for ATS score ≥95% based on the prov
 
 ---
 
-# INPUTS
+## INPUTS
 
-## Candidate
+### Candidate
 
 * Name: `{{name}}`
 * Email: `{{email}}`
 * Location: `{{location}}`
 * Experience: `{{yearsOfExperience}} years`
 
-## Work History
+### Work History
 
 ```text
 {{workHistory}}
 ```
 
-## Education
+### Education
 
 ```text
 {{education}}
 ```
 
-## Job Description
+### Job Description
 
 ```text
 {{jobDescription}}
@@ -37,7 +37,7 @@ Generate a tailored resume JSON optimized for ATS score ≥95% based on the prov
 
 ---
 
-# OUTPUT RULES
+## OUTPUT RULES
 
 Return ONLY valid JSON.
 
@@ -53,7 +53,7 @@ Output must start with `{` and end with `}`.
 
 ---
 
-# OUTPUT SCHEMA
+## OUTPUT SCHEMA
 
 ```json
 {
@@ -75,9 +75,9 @@ Output must start with `{` and end with `}`.
 
 ---
 
-# GLOBAL ATS RULES
+## GLOBAL ATS RULES
 
-## Keyword Optimization
+### Keyword Optimization
 
 * Use exact JD phrases whenever possible
 * Prioritize high-frequency JD keywords
@@ -88,11 +88,11 @@ Output must start with `{` and end with `}`.
   * skills
   * experience bullets
 
-## ATS Target
+### ATS Target
 
 * Target ATS score ≥95%
 
-## Writing Style
+### Writing Style
 
 * Professional and concise
 * Strong action verbs
@@ -102,7 +102,7 @@ Output must start with `{` and end with `}`.
 
 ---
 
-# 1. DOMAIN KEYWORDS
+## 1. DOMAIN KEYWORDS
 
 Extract 10–15 domain-specific keywords from the JD company/about/domain section.
 
@@ -110,7 +110,7 @@ Use them across:
 
 * Summary: 4–6
 * Skills: dedicated category if relevant
-* Experience: 4–5 bullets total
+* Experience: 4–6 bullets total
 
 Examples:
 
@@ -121,15 +121,15 @@ Examples:
 
 ---
 
-# 2. TITLE GENERATION
+## 2. TITLE GENERATION
 
-## Base Title
+### Base Title
 
 Use the candidate's most recent job title.
 
 ---
 
-## Title Matching Logic
+### Title Matching Logic
 
 Normalize titles before comparison:
 
@@ -154,7 +154,7 @@ Compare core role domains:
 * AI
 * Architect
 
-### MATCH Examples
+#### MATCH Examples
 
 * Full Stack Engineer ↔ Full Stack Developer
 * Frontend Engineer ↔ Frontend Developer
@@ -163,7 +163,7 @@ Compare core role domains:
 * DevOps Engineer ↔ DevOps Specialist
 * AI Engineer ↔ Artificial Intelligence Engineer
 
-### NON-MATCH Examples
+#### NON-MATCH Examples
 
 * Full Stack ↔ Frontend
 * Full Stack ↔ Backend
@@ -174,15 +174,15 @@ Compare core role domains:
 
 ---
 
-## Title Format
+### Title Format
 
-### If MATCH
+#### If MATCH
 
 ```text
 [Most Recent Title] | [Tech1] | [Tech2] | [Tech3]
 ```
 
-### If NOT MATCH
+#### If NOT MATCH
 
 ```text
 [Most Recent Title] | [JD Specialization] | [Tech1] | [Tech2] | [Tech3]
@@ -190,7 +190,7 @@ Compare core role domains:
 
 ---
 
-## JD Specialization Mapping
+### JD Specialization Mapping
 
 | JD Focus   | Specialization        |
 | ---------- | --------------------- |
@@ -203,7 +203,7 @@ Compare core role domains:
 
 ---
 
-## Tech Stack Rules
+### Tech Stack Rules
 
 Extract 4–6 major technologies from the JD:
 Priority:
@@ -216,41 +216,50 @@ Priority:
 
 ---
 
-# 3. SUMMARY
+## 3. SUMMARY
 
-## Requirements
+### Requirements
 
 * Single paragraph only
 * No line breaks
 * 5–6 sentences
 * 8–12 JD keywords
 * 3–5 domain keywords
-* Professional ATS-optimized tone
+* ATS-optimized professional tone
 
-## Structure
+### Must Include
+
+* Mention remote work experience (distributed / remote-first environments)
+* Mention English communication ability:
+
+  * Use phrasing like: “strong English communication in remote teams” or “fluent professional English communication”
+
+### Structure
 
 Include:
 
 1. Title + years of experience + domain expertise
-2. Core expertise and major JD technologies
-3. Quantified achievement and business impact
-4. Additional technical proficiencies
-5. Soft skills, Agile/leadership experience
-6. Focus on scalable solutions and JD-aligned responsibilities
+2. Core technical expertise aligned with JD
+3. Quantified achievement and impact
+4. Key technologies from JD
+5. Soft skills + Agile + collaboration
+6. Remote work + English communication capability
+7. Focus on scalable systems and JD alignment
 
-## Rules
+### Rules (summary)
 
-* Write naturally as one continuous paragraph
-* Do NOT use bullet points
-* Do NOT insert newline characters
-* Avoid repetitive sentence openings
-* Integrate JD keywords organically
+* Must be ONE continuous paragraph
+* No bullet points
+* No newline characters
+* No repetitive sentence starts
+* Integrate keywords naturally (no stuffing)
+* Remote + English statement must feel natural, not forced
 
 ---
 
-# 4. SKILLS
+## 4. SKILLS
 
-## Rules
+### Rules (Skills)
 
 * 50–60 total skills
 * 5–6 categories
@@ -258,7 +267,7 @@ Include:
 * 80% JD-aligned
 * 20% complementary
 
-## Category Examples
+### Category Examples
 
 * Frontend
 * Backend
@@ -268,7 +277,7 @@ Include:
 * Data
 * Testing
 
-## Formatting
+### Formatting
 
 * Capitalize properly
 * Avoid version spam
@@ -282,16 +291,16 @@ AWS (Lambda, EC2, S3)
 
 ---
 
-# 5. EXPERIENCE
+## 5. EXPERIENCE
 
-## Core Rule
+### Core Rule
 
 The JD is the optimization target.
 The candidate history is the source of truth.
 
 ---
 
-## Bullet Requirements
+### Bullet Requirements
 
 * 5–7 bullets/job
 
@@ -307,7 +316,7 @@ The candidate history is the source of truth.
 
 ---
 
-## Preferred Verbs
+### Preferred Verbs
 
 * Architected
 * Engineered
@@ -328,7 +337,7 @@ Avoid:
 
 ---
 
-## Metrics Examples
+### Metrics Examples
 
 * 40% faster
 * Reduced costs 35%
@@ -339,16 +348,16 @@ Avoid:
 
 ---
 
-## Experience Tailoring Rules
+### Experience Tailoring Rules
 
-### If Detailed Accomplishments Exist
+#### If Detailed Accomplishments Exist
 
 * Preserve actual responsibilities
 * Improve wording for ATS alignment
 * Inject relevant JD keywords naturally
 * Keep technologies authentic
 
-### If No Details Exist
+#### If No Details Exist
 
 Generate plausible achievements based on:
 
@@ -359,7 +368,7 @@ Generate plausible achievements based on:
 
 ---
 
-# TECHNOLOGY TIMELINE VALIDATION
+## TECHNOLOGY TIMELINE VALIDATION
 
 Only use technologies that existed during the job period.
 
@@ -392,7 +401,7 @@ Examples:
 
 ---
 
-# FINAL VALIDATION CHECKLIST
+## FINAL VALIDATION CHECKLIST
 
 Ensure:
 
