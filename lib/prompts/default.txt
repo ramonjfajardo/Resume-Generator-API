@@ -17,7 +17,7 @@ Experience: {{yearsOfExperience}} years
 
 **INSTRUCTIONS:**
 
-**1. DOMAIN KEYWORDS** (10-15 from JD "About Us"): Use in Summary (4-6), Skills (dedicated category), Experience (3-4 bullets).
+**1. DOMAIN KEYWORDS** (10-15 from JD "About Us"): Use in Summary (4-6), Skills (dedicated category), Experience (3-7 bullets).
 
 ---
 
@@ -66,15 +66,15 @@ Experience: {{yearsOfExperience}} years
 
 ---
 
-**3. SUMMARY** (5-6 lines, 8-10 JD keywords + 3-5 domain): Line 1: [Title] with {{yearsOfExperience}}+ years in [domain]. Line 2: Expertise in [domain keyword] + [3-4 JD techs with versions]. Line 3: Track record in [domain keyword] + [achievement with metric]. Line 4: Proficient in [3-4 more JD techs]. Line 5: [Soft skill] professional with Agile/leadership experience. Line 6: Focus on [2-3 JD skill areas] + scalable solutions.
+**3. SUMMARY** (5-6 Sentences, 8-10 JD keywords + 3-5 domain): Sentence 1: [Title] with {{yearsOfExperience}}+ years in [domain]. Sentence 2: Expertise in [domain keyword] + [3-4 JD techs with versions]. Sentence 3: Track record in [domain keyword] + [achievement with metric]. Sentence 4: Proficient in [3-4 more JD techs]. Sentence 5: [Soft skill] professional with Agile/leadership experience. Sentence 6: Focus on [2-3 JD skill areas] + scalable solutions.
 
 ---
 
-**4. SKILLS** (60-80 total, 5-8 categories): Categories by JD focus (Frontend, Backend, Cloud, DevOps, Security). 8-12 skills/category. Capitalize first letter. NO version spam. Group cloud: "AWS (Lambda, S3, EC2)". 70% JD keywords + 30% complementary. Domain category if relevant (FinTech→"Payment & Compliance", Healthcare→"Healthcare Compliance", Security→"Security & Identity", Data→"Data Governance").
+**4. SKILLS** (60-80 total, 5-6 categories): Categories by JD focus (Programming Language, Frontend, Backend, Database, Cloud, DevOps, Security). 8-10 skills/category. Capitalize first letter. NO version spam. Group cloud: "AWS (Lambda, S3, EC2)". 70% JD keywords + 30% complementary. Domain category if relevant (FinTech→"Payment & Compliance", Healthcare→"Healthcare Compliance", Security→"Security & Identity", Data→"Data Governance").
 
 ---
 
-**5. EXPERIENCE** ({{experienceCount}} entries, 5-7 bullets each): The **JOB DESCRIPTION IS PRIMARY**. Every bullet must be mapped to 1-3 high-priority JD requirements while still accurately reflecting the candidate's real work history. 5-7 bullets/job (recent=7, older=5). 30-35 words/bullet. 2-4 exact JD keywords/bullet. EVERY bullet needs a metric (%, $, time, scale, users). Industry context in 2-3 bullets/job. Overall targeting **ATS score ≥ 95%**.
+**5. EXPERIENCE** ({{experienceCount}} entries, 5-7 bullets each): The **JOB DESCRIPTION IS PRIMARY**. Every bullet must be mapped to 1-3 high-priority JD requirements while still accurately reflecting the candidate's real work history. 3-7 bullets/job (most recent=7, second=6, third=5, forth=4, others=3). 30-35 words/bullet. 2-4 exact JD keywords/bullet. Some of bullet needs a metric (%, $, time, scale, users). Industry context in 2-3 bullets/job. Overall targeting **ATS score ≥ 95%**.
 
 **CRITICAL: JD-FIRST, DETAIL-BASED BULLETS (TARGET ATS ≥ 95%)** - ALWAYS treat the JD as the primary source for what to highlight, but the candidate's experience details as the source of truth:
 1. **Start from provided Details** - For any job that includes "Details", you MUST derive bullets from those actual accomplishments and responsibilities (do not invent unrelated work).
