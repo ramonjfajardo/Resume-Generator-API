@@ -70,7 +70,7 @@ Experience: {{yearsOfExperience}} years
 
 ---
 
-**4. SKILLS** (60-80 total, 5-6 categories): Categories by JD focus (Programming Language, Frontend, Backend, Database, Cloud, DevOps, Security). 8-10 skills/category. Capitalize first letter. NO version spam. Group cloud: "AWS (Lambda, S3, EC2)". 70% JD keywords + 30% complementary. Domain category if relevant (FinTech→"Payment & Compliance", Healthcare→"Healthcare Compliance", Security→"Security & Identity", Data→"Data Governance").
+**4. SKILLS** (60-80 total, 5-7 categories): Categories by JD focus (Programming Language, Frontend, Backend, Database, Cloud, DevOps, Security). 8-10 skills/category. Capitalize first letter. NO version spam. Group cloud: "AWS (Lambda, S3, EC2)". 70% JD keywords + 30% complementary. Domain category if relevant (FinTech→"Payment & Compliance", Healthcare→"Healthcare Compliance", Security→"Security & Identity", Data→"Data Governance").
 
 ---
 
